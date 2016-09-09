@@ -1,0 +1,25 @@
+unit uCommonGridFund;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs,
+  uCommonGridForm;
+
+type
+  TfrmCommonGridFund = class(TfrmCommonGrid)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCommonGridFund: TfrmCommonGridFund;
+
+implementation
+
+{$R *.dfm}
+
+end.

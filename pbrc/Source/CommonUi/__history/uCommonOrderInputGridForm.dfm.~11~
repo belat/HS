@@ -1,0 +1,13 @@
+inherited frmCommonOrderInputGrid: TfrmCommonOrderInputGrid
+  Caption = 'frmCommonOrderInputGrid'
+  ClientHeight = 237
+  ExplicitWidth = 316
+  ExplicitHeight = 276
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited grdMain: TcxDBVerticalGrid
+    Height = 237
+    ExplicitHeight = 237
+    Version = 1
+  end
+end

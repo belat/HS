@@ -1,0 +1,66 @@
+unit uFutureSingleTradeDataCenter;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, dxmdaset;
+
+type
+  TfrmFutureSingleTradeDataCenter = class(TForm)
+    mdProductInfo: TdxMemData;
+    mdProductInfoProductId: TStringField;
+    mdProductInfoProductName: TStringField;
+    mdAssetInfo: TdxMemData;
+    mdAssetInfoAssetId: TStringField;
+    mdAssetInfoAssetName: TStringField;
+    mdAssetInfoProductId: TStringField;
+    mdStockInfo: TdxMemData;
+    mdStockInfoInterCode: TStringField;
+    mdStockInfoMarketNo: TStringField;
+    mdStockInfoStockCode: TStringField;
+    mdStockInfoStockName: TStringField;
+    mdCommon: TdxMemData;
+    mdCommonProductId: TStringField;
+    mdCommonProductName: TStringField;
+    mdCommonAssetId: TStringField;
+    mdCommonAssetName: TStringField;
+    mdCommonInterCode: TStringField;
+    mdCommonMarketNo: TStringField;
+    mdCommonStockCode: TStringField;
+    mdCommonStockName: TStringField;
+    mdCommonInvestType: TStringField;
+    mdCommonMM: TStringField;
+    mdCommonKP: TStringField;
+    mdCommonEntrustDirection: TStringField;
+    mdCommonAmount: TStringField;
+    mdCommonAmountMax: TStringField;
+    mdCommonPriceType: TStringField;
+    mdCommonPrice: TStringField;
+    mdInvestInfo: TdxMemData;
+    mdInvestInfoInvestType: TStringField;
+    mdInvestInfoInvestTypeName: TStringField;
+    mdPriceInfo: TdxMemData;
+    mdPriceInfoPriceType: TStringField;
+    mdPriceInfoPriceTypeName: TStringField;
+    dsProductInfo: TDataSource;
+    dsAssetInfo: TDataSource;
+    dsStockInfo: TDataSource;
+    dsCommon: TDataSource;
+    dsInvestInfo: TDataSource;
+    dsPriceInfo: TDataSource;
+    mdFutureSingleTrade: TdxMemData;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmFutureSingleTradeDataCenter: TfrmFutureSingleTradeDataCenter;
+
+implementation
+
+{$R *.dfm}
+
+end.

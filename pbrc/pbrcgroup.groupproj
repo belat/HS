@@ -1,0 +1,84 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F4037256-EED6-40F0-97D7-7C9CCD7B3F3D}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Source\Main\pbrc.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Source\Trade\FutureSingleTrade\FutureSingleTrade.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Source\Trade\FutureMultiTrade\FutureMultiTrade.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Source\CommonUi\CommonUi.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Source\CommonUnit\CommonUnit.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="pbrc">
+        <MSBuild Projects="Source\Main\pbrc.dproj"/>
+    </Target>
+    <Target Name="pbrc:Clean">
+        <MSBuild Projects="Source\Main\pbrc.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="pbrc:Make">
+        <MSBuild Projects="Source\Main\pbrc.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FutureSingleTrade">
+        <MSBuild Projects="Source\Trade\FutureSingleTrade\FutureSingleTrade.dproj"/>
+    </Target>
+    <Target Name="FutureSingleTrade:Clean">
+        <MSBuild Projects="Source\Trade\FutureSingleTrade\FutureSingleTrade.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FutureSingleTrade:Make">
+        <MSBuild Projects="Source\Trade\FutureSingleTrade\FutureSingleTrade.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FutureMultiTrade">
+        <MSBuild Projects="Source\Trade\FutureMultiTrade\FutureMultiTrade.dproj"/>
+    </Target>
+    <Target Name="FutureMultiTrade:Clean">
+        <MSBuild Projects="Source\Trade\FutureMultiTrade\FutureMultiTrade.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FutureMultiTrade:Make">
+        <MSBuild Projects="Source\Trade\FutureMultiTrade\FutureMultiTrade.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CommonUi">
+        <MSBuild Projects="Source\CommonUi\CommonUi.dproj"/>
+    </Target>
+    <Target Name="CommonUi:Clean">
+        <MSBuild Projects="Source\CommonUi\CommonUi.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CommonUi:Make">
+        <MSBuild Projects="Source\CommonUi\CommonUi.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CommonUnit">
+        <MSBuild Projects="Source\CommonUnit\CommonUnit.dproj"/>
+    </Target>
+    <Target Name="CommonUnit:Clean">
+        <MSBuild Projects="Source\CommonUnit\CommonUnit.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CommonUnit:Make">
+        <MSBuild Projects="Source\CommonUnit\CommonUnit.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="pbrc;FutureSingleTrade;FutureMultiTrade;CommonUi;CommonUnit"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="pbrc:Clean;FutureSingleTrade:Clean;FutureMultiTrade:Clean;CommonUi:Clean;CommonUnit:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="pbrc:Make;FutureSingleTrade:Make;FutureMultiTrade:Make;CommonUi:Make;CommonUnit:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

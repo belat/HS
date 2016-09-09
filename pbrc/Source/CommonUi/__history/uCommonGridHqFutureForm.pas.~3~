@@ -1,0 +1,25 @@
+unit uCommonGridHqFutureForm;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs,
+  uCommonGridHqForm;
+
+type
+  TfrmCommonGridHqFuture = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCommonGridHqFuture: TfrmCommonGridHqFuture;
+
+implementation
+
+{$R *.dfm}
+
+end.

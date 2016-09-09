@@ -1,0 +1,127 @@
+inherited frmFutureSingleTest: TfrmFutureSingleTest
+  Caption = 'frmFutureSingleTest'
+  ClientWidth = 452
+  ExplicitWidth = 468
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited grdMain: TcxDBVerticalGrid
+    Width = 452
+    Version = 1
+    inherited grdMainRecId: TcxDBEditorRow
+      ID = 0
+      ParentID = -1
+      Index = 0
+      Version = 1
+    end
+    inherited grdMainProductId: TcxDBEditorRow
+      ID = 1
+      ParentID = -1
+      Index = 1
+      Version = 1
+    end
+    inherited grdMainAssetId: TcxDBEditorRow
+      ID = 2
+      ParentID = -1
+      Index = 2
+      Version = 1
+    end
+    inherited grdMainStockCode: TcxDBMultiEditorRow
+      Properties.Editors = <
+        item
+          Caption = 'StockCode'
+          EditPropertiesClassName = 'TcxLookupComboBoxProperties'
+          EditProperties.ListColumns = <
+            item
+              FieldName = 'StockCode'
+            end>
+          EditProperties.ListSource = dsStockCode
+          Width = 150
+        end
+        item
+          Caption = 'StockName'
+          EditPropertiesClassName = 'TcxLabelProperties'
+          Width = 100
+        end
+        item
+          Caption = 'InvestType'
+          EditPropertiesClassName = 'TcxComboBoxProperties'
+          EditProperties.Items.Strings = (
+            #25237#26426
+            #22871#20445
+            #22871#21033)
+          Width = 20
+        end>
+      ID = 3
+      ParentID = -1
+      Index = 3
+      Version = 1
+    end
+    inherited grdMainInvestType: TcxDBEditorRow
+      ID = 4
+      ParentID = -1
+      Index = 4
+      Version = 1
+    end
+    inherited grdMainMM: TcxDBEditorRow
+      ID = 5
+      ParentID = -1
+      Index = 5
+      Version = 1
+    end
+    inherited grdMainKP: TcxDBEditorRow
+      ID = 6
+      ParentID = -1
+      Index = 6
+      Version = 1
+    end
+    inherited grdMainAmount: TcxDBEditorRow
+      ID = 7
+      ParentID = -1
+      Index = 7
+      Version = 1
+    end
+    inherited grdMainAmountMax: TcxDBEditorRow
+      ID = 8
+      ParentID = -1
+      Index = 8
+      Version = 1
+    end
+    inherited grdMainPriceType: TcxDBEditorRow
+      ID = 9
+      ParentID = -1
+      Index = 9
+      Version = 1
+    end
+    inherited grdMainPrice: TcxDBEditorRow
+      ID = 10
+      ParentID = -1
+      Index = 10
+      Version = 1
+    end
+    inherited grdMainAmount1: TcxDBMultiEditorRow
+      ID = 11
+      ParentID = -1
+      Index = 11
+      Version = 1
+    end
+  end
+  inherited mdCommon: TdxMemData
+    Persistent.Data = {
+      5665728FC2F5285C8FFE3F0A0000001400000001000A0050726F647563744964
+      00140000000100080041737365744964001400000001000A0053746F636B436F
+      6465001400000001000B00496E76657374547970650014000000010003004D4D
+      0014000000010003004B50001400000001000700416D6F756E74001400000001
+      000A00416D6F756E744D6178001400000001000A005072696365547970650014
+      0000000100060050726963650001030000003138320101000000310105000000
+      3030303031010100000061010100000057010100000057010200000031300103
+      0000003130300101000000310103000000313030}
+  end
+  inherited mdStockCode: TdxMemData
+    Persistent.Data = {
+      5665728FC2F5285C8FFE3F030000001400000001000A0053746F636B436F6465
+      001400000001000A0053746F636B4E616D65001400000001000B00496E766573
+      745479706500010500000030303030310107000000C9EEB7A2D5B94101010000
+      006101060000003630303537300108000000BAE3C9FAB5E7D7D3010100000061
+      01060000003630303537310106000000D0C5D1C5B4EF010100000061}
+  end
+end

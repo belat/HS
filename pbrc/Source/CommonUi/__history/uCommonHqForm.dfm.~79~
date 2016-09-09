@@ -1,0 +1,8 @@
+inherited frmCommonHq: TfrmCommonHq
+  Caption = 'frmCommonHq'
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited grdMain: TcxDBVerticalGrid
+    Version = 1
+  end
+end

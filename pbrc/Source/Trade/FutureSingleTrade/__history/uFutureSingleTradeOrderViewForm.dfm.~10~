@@ -1,0 +1,4 @@
+inherited frmFutureSingleTradeOrderView: TfrmFutureSingleTradeOrderView
+  Caption = 'frmFutureSingleTradeOrderView'
+  
+end

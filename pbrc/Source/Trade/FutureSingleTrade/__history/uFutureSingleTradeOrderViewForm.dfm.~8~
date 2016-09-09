@@ -1,0 +1,10 @@
+inherited frmFutureSingleTradeOrderView: TfrmFutureSingleTradeOrderView
+  AutoSize = True
+  Caption = 'frmFutureSingleTradeOrderView'
+  ClientHeight = 299
+  ClientWidth = 180
+  ExplicitWidth = 651
+  ExplicitHeight = 338
+  PixelsPerInch = 96
+  TextHeight = 13
+end

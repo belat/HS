@@ -1,0 +1,93 @@
+inherited frmCommonOrderHqFuture: TfrmCommonOrderHqFuture
+  Caption = 'frmCommonOrderHqFuture'
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited grdMain: TcxDBVerticalGrid
+    ExplicitWidth = 528
+    Version = 1
+    inherited erMainRecId: TcxDBEditorRow
+      ID = 0
+      ParentID = -1
+      Index = 0
+      Version = 1
+    end
+    inherited erMainLimitUp: TcxDBEditorRow
+      ID = 1
+      ParentID = -1
+      Index = 1
+      Version = 1
+    end
+    inherited erMainSale5: TcxDBEditorRow
+      ID = 2
+      ParentID = -1
+      Index = 2
+      Version = 1
+    end
+    inherited erMainSale4: TcxDBEditorRow
+      ID = 3
+      ParentID = -1
+      Index = 3
+      Version = 1
+    end
+    inherited erMainSale3: TcxDBEditorRow
+      ID = 4
+      ParentID = -1
+      Index = 4
+      Version = 1
+    end
+    inherited erMainSale2: TcxDBEditorRow
+      ID = 5
+      ParentID = -1
+      Index = 5
+      Version = 1
+    end
+    inherited erMainSale1: TcxDBEditorRow
+      ID = 6
+      ParentID = -1
+      Index = 6
+      Version = 1
+    end
+    inherited erMainLast: TcxDBEditorRow
+      ID = 7
+      ParentID = -1
+      Index = 7
+      Version = 1
+    end
+    inherited erMainBuy1: TcxDBEditorRow
+      ID = 8
+      ParentID = -1
+      Index = 8
+      Version = 1
+    end
+    inherited erMainBuy2: TcxDBEditorRow
+      ID = 9
+      ParentID = -1
+      Index = 9
+      Version = 1
+    end
+    inherited erMainBuy3: TcxDBEditorRow
+      ID = 10
+      ParentID = -1
+      Index = 10
+      Version = 1
+    end
+    inherited erMainBuy4: TcxDBEditorRow
+      ID = 11
+      ParentID = -1
+      Index = 11
+      Version = 1
+    end
+    inherited erMainBuy5: TcxDBEditorRow
+      ID = 12
+      ParentID = -1
+      Index = 12
+      Version = 1
+    end
+    inherited erMainLimitDown: TcxDBEditorRow
+      ID = 13
+      ParentID = -1
+      Index = 13
+      Version = 1
+    end
+  end
+end

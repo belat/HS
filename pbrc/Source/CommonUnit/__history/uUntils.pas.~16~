@@ -1,0 +1,33 @@
+unit uUntils;
+
+interface
+
+uses
+  Data.DB,
+  System.SysUtils,
+  System.Generics.Defaults,
+  System.Generics.Collections;
+type
+  Ttestclass = class(TObject)
+  end;
+
+  function getClass: Integer;
+  function getClassList: Integer;
+
+  function getClass(object1: Tobject<T>): Integer;
+
+implementation
+
+function getClass: Integer;
+var
+  dataset: TDataSet;
+begin
+  dataset.
+end;
+
+function getClassList: Integer;
+begin
+
+end;
+
+end.

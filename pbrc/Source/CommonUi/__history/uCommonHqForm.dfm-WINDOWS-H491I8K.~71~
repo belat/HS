@@ -1,0 +1,120 @@
+inherited frmCommonHq: TfrmCommonHq
+  Caption = 'frmCommonHq'
+  ClientHeight = 368
+  ClientWidth = 528
+  ExplicitWidth = 544
+  ExplicitHeight = 407
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited grdMain: TcxDBVerticalGrid
+    Width = 528
+    Height = 368
+    LayoutStyle = lsMultiRecordView
+    OptionsView.ScrollBars = ssNone
+    OptionsView.RowHeaderWidth = 70
+    OptionsView.ValueWidth = 70
+    OptionsView.ValueMinWidth = 70
+    ExplicitWidth = 216
+    ExplicitHeight = 237
+    Version = 1
+    object erMainRecId: TcxDBEditorRow
+      Properties.DataBinding.FieldName = 'RecId'
+      Visible = False
+      ID = 0
+      ParentID = -1
+      Index = 0
+      Version = 1
+    end
+    object erMainLimitUp: TcxDBEditorRow
+      Properties.DataBinding.FieldName = 'LimitUp'
+      ID = 1
+      ParentID = -1
+      Index = 1
+      Version = 1
+    end
+    object erMainSale5: TcxDBEditorRow
+      Properties.DataBinding.FieldName = 'Sale5'
+      ID = 2
+      ParentID = -1
+      Index = 2
+      Version = 1
+    end
+    object erMainSale4: TcxDBEditorRow
+      Properties.DataBinding.FieldName = 'Sale4'
+      ID = 3
+      ParentID = -1
+      Index = 3
+      Version = 1
+    end
+    object erMainSale3: TcxDBEditorRow
+      Properties.DataBinding.FieldName = 'Sale3'
+      ID = 4
+      ParentID = -1
+      Index = 4
+      Version = 1
+    end
+    object erMainSale2: TcxDBEditorRow
+      Properties.DataBinding.FieldName = 'Sale2'
+      ID = 5
+      ParentID = -1
+      Index = 5
+      Version = 1
+    end
+    object erMainSale1: TcxDBEditorRow
+      Properties.DataBinding.FieldName = 'Sale1'
+      ID = 6
+      ParentID = -1
+      Index = 6
+      Version = 1
+    end
+    object erMainLast: TcxDBEditorRow
+      Properties.DataBinding.FieldName = 'Last'
+      ID = 7
+      ParentID = -1
+      Index = 7
+      Version = 1
+    end
+    object erMainBuy1: TcxDBEditorRow
+      Properties.DataBinding.FieldName = 'Buy1'
+      ID = 8
+      ParentID = -1
+      Index = 8
+      Version = 1
+    end
+    object erMainBuy2: TcxDBEditorRow
+      Properties.DataBinding.FieldName = 'Buy2'
+      ID = 9
+      ParentID = -1
+      Index = 9
+      Version = 1
+    end
+    object erMainBuy3: TcxDBEditorRow
+      Properties.DataBinding.FieldName = 'Buy3'
+      ID = 10
+      ParentID = -1
+      Index = 10
+      Version = 1
+    end
+    object erMainBuy4: TcxDBEditorRow
+      Properties.DataBinding.FieldName = 'Buy4'
+      ID = 11
+      ParentID = -1
+      Index = 11
+      Version = 1
+    end
+    object erMainBuy5: TcxDBEditorRow
+      Properties.DataBinding.FieldName = 'Buy5'
+      ID = 12
+      ParentID = -1
+      Index = 12
+      Version = 1
+    end
+    object erMainLimitDown: TcxDBEditorRow
+      Properties.DataBinding.FieldName = 'LimitDown'
+      ID = 13
+      ParentID = -1
+      Index = 13
+      Version = 1
+    end
+  end
+end

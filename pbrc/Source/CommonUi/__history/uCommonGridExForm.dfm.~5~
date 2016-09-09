@@ -1,0 +1,5 @@
+inherited frmCommonGridEx: TfrmCommonGridEx
+  Caption = 'frmCommonGridEx'
+  PixelsPerInch = 96
+  TextHeight = 13
+end

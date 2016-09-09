@@ -1,0 +1,104 @@
+inherited frmCommonOrderView: TfrmCommonOrderView
+  Caption = 'frmCommonOrderView'
+  ClientHeight = 251
+  ClientWidth = 183
+  ExplicitWidth = 199
+  ExplicitHeight = 290
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited lcCommonOrderView: TdxLayoutControl
+    Width = 183
+    Height = 251
+    ExplicitWidth = 180
+    ExplicitHeight = 251
+    inherited grdHq: TcxVerticalGrid
+      Width = 200
+      Height = 231
+      ExplicitWidth = 200
+      ExplicitHeight = 231
+      Version = 1
+      inherited erLimitUp: TcxEditorRow
+        ID = 0
+        ParentID = -1
+        Index = 0
+        Version = 1
+      end
+      inherited erSale5: TcxEditorRow
+        ID = 1
+        ParentID = -1
+        Index = 1
+        Version = 1
+      end
+      inherited erSale4: TcxEditorRow
+        ID = 2
+        ParentID = -1
+        Index = 2
+        Version = 1
+      end
+      inherited erSale3: TcxEditorRow
+        ID = 3
+        ParentID = -1
+        Index = 3
+        Version = 1
+      end
+      inherited erSale2: TcxEditorRow
+        ID = 4
+        ParentID = -1
+        Index = 4
+        Version = 1
+      end
+      inherited erSale1: TcxEditorRow
+        ID = 5
+        ParentID = -1
+        Index = 5
+        Version = 1
+      end
+      inherited erBuy1: TcxEditorRow
+        ID = 6
+        ParentID = -1
+        Index = 6
+        Version = 1
+      end
+      inherited erBuy2: TcxEditorRow
+        ID = 7
+        ParentID = -1
+        Index = 7
+        Version = 1
+      end
+      inherited erBuy3: TcxEditorRow
+        ID = 8
+        ParentID = -1
+        Index = 8
+        Version = 1
+      end
+      inherited erBuy4: TcxEditorRow
+        ID = 9
+        ParentID = -1
+        Index = 9
+        Version = 1
+      end
+      inherited erBuy5: TcxEditorRow
+        ID = 10
+        ParentID = -1
+        Index = 10
+        Version = 1
+      end
+      inherited erLimitDown: TcxEditorRow
+        ID = 11
+        ParentID = -1
+        Index = 11
+        Version = 1
+      end
+    end
+    inherited lcCommonOrderViewGroup_Root: TdxLayoutGroup
+      Index = -1
+    end
+    inherited lgHq: TdxLayoutGroup
+      Index = 0
+    end
+    inherited liHq: TdxLayoutItem
+      AlignHorz = ahClient
+      Index = 0
+    end
+  end
+end

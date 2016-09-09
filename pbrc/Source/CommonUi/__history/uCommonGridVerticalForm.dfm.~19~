@@ -1,0 +1,45 @@
+object frmCommonGirdVertical: TfrmCommonGirdVertical
+  Left = 0
+  Top = 0
+  Caption = 'frmCommonGirdVertical'
+  ClientHeight = 300
+  ClientWidth = 500
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object grdMain: TcxVerticalGrid
+    Left = 0
+    Top = 0
+    Width = 500
+    Height = 300
+    Align = alClient
+    OptionsView.RowHeaderMinWidth = 50
+    OptionsView.RowHeaderWidth = 70
+    TabOrder = 0
+    ExplicitLeft = 248
+    ExplicitTop = 88
+    ExplicitWidth = 150
+    ExplicitHeight = 200
+    Version = 1
+  end
+  object mdMain: TdxMemData
+    Indexes = <>
+    SortOptions = []
+    Left = 360
+    Top = 24
+  end
+  object dsMain: TDataSource
+    Left = 360
+    Top = 72
+  end
+  object erMain: TcxEditRepository
+    Left = 360
+    Top = 128
+  end
+end

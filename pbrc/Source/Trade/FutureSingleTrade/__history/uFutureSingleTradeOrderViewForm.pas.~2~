@@ -1,0 +1,25 @@
+unit uFutureSingleTradeOrderViewForm;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs,
+  uCommonOrderViewForm;
+
+type
+  TfrmFutureSingleTradeOrderView = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmFutureSingleTradeOrderView: TfrmFutureSingleTradeOrderView;
+
+implementation
+
+{$R *.dfm}
+
+end.

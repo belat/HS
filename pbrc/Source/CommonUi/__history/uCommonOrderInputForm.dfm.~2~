@@ -1,0 +1,44 @@
+object frmCommonInput: TfrmCommonInput
+  Left = 0
+  Top = 0
+  Caption = 'frmCommonInput'
+  ClientHeight = 299
+  ClientWidth = 635
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lcCommonInput: TdxLayoutControl
+    Left = 0
+    Top = 0
+    Width = 635
+    Height = 299
+    Align = alClient
+    TabOrder = 0
+    ExplicitLeft = 168
+    ExplicitTop = 8
+    ExplicitWidth = 300
+    ExplicitHeight = 250
+    object lcCommonInputGroup_Root: TdxLayoutGroup
+      AlignHorz = ahClient
+      AlignVert = avClient
+      ButtonOptions.Buttons = <>
+      Hidden = True
+      ShowBorder = False
+      Index = -1
+    end
+    object lgInput: TdxLayoutGroup
+      Parent = lcCommonInputGroup_Root
+      AlignHorz = ahClient
+      AlignVert = avClient
+      CaptionOptions.Text = 'New Group'
+      ButtonOptions.Buttons = <>
+      Index = 0
+    end
+  end
+end

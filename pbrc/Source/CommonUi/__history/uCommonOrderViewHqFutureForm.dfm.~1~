@@ -1,0 +1,4 @@
+inherited frmCommonOrderView: TfrmCommonOrderView
+  Caption = 'frmCommonOrderView'
+  
+end

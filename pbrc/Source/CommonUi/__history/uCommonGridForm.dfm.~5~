@@ -1,0 +1,44 @@
+object frmCommonGrid: TfrmCommonGrid
+  Left = 0
+  Top = 0
+  Caption = 'frmCommonGrid'
+  ClientHeight = 279
+  ClientWidth = 618
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object grdCommon: TcxGrid
+    Left = 0
+    Top = 0
+    Width = 618
+    Height = 279
+    Align = alClient
+    TabOrder = 0
+    object gdtvCommon: TcxGridDBTableView
+      Navigator.Buttons.CustomButtons = <>
+      DataController.Summary.DefaultGroupSummaryItems = <>
+      DataController.Summary.FooterSummaryItems = <>
+      DataController.Summary.SummaryGroups = <>
+      OptionsView.GroupByBox = False
+      object colChk: TcxGridDBColumn
+        Caption = 'Chk'
+        PropertiesClassName = 'TcxButtonEditProperties'
+        Properties.Buttons = <
+          item
+            Default = True
+            Kind = bkEllipsis
+          end>
+      end
+    end
+    object glCommon: TcxGridLevel
+      Caption = 'Common'
+      GridView = gdtvCommon
+    end
+  end
+end
