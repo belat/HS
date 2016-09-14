@@ -19,10 +19,11 @@ uses
   dxSkinSummer2008, dxSkinTheAsphaltWorld, dxSkinsDefaultPainters,
   dxSkinValentine, dxSkinVS2010, dxSkinWhiteprint, dxSkinXmas2008Blue,
   dxSkinscxPCPainter, dxLayoutControlAdapters, dxLayoutContainer, Vcl.ExtCtrls,
-  dxLayoutControl, dxLayoutLookAndFeels, cxClasses;
+  dxLayoutControl, dxLayoutLookAndFeels, cxClasses,
+  uCommonForm;
 
 type
-  TfrmCommonOrder = class(TForm)
+  TfrmCommonOrder = class(TfrmCommon)
     lcMain: TdxLayoutControl;
     lgMain: TdxLayoutGroup;
     lafMain: TdxLayoutLookAndFeelList;

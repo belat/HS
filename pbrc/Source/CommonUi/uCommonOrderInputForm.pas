@@ -19,10 +19,11 @@ uses
   dxSkinSummer2008, dxSkinTheAsphaltWorld, dxSkinsDefaultPainters,
   dxSkinValentine, dxSkinVS2010, dxSkinWhiteprint, dxSkinXmas2008Blue,
   dxSkinscxPCPainter, dxLayoutContainer, dxLayoutControl, Vcl.Menus,
-  dxLayoutControlAdapters, Vcl.StdCtrls, cxButtons;
+  dxLayoutControlAdapters, Vcl.StdCtrls, cxButtons,
+  uCommonForm;
 
 type
-  TfrmCommonInput = class(TForm)
+  TfrmCommonInput = class(TfrmCommon)
     lcCommonInputGroup_Root: TdxLayoutGroup;
     lcCommonInput: TdxLayoutControl;
     lgInput: TdxLayoutGroup;

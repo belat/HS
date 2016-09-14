@@ -1,16 +1,9 @@
-object frmCommonGrid: TfrmCommonGrid
-  Left = 0
-  Top = 0
+inherited frmCommonGrid: TfrmCommonGrid
   Caption = 'frmCommonGrid'
   ClientHeight = 368
   ClientWidth = 705
-  Color = clBtnFace
-  Font.Charset = DEFAULT_CHARSET
-  Font.Color = clWindowText
-  Font.Height = -11
-  Font.Name = 'Tahoma'
-  Font.Style = []
-  OldCreateOrder = False
+  ExplicitWidth = 721
+  ExplicitHeight = 407
   PixelsPerInch = 96
   TextHeight = 13
   object grdMain: TcxGrid

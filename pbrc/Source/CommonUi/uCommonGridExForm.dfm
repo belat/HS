@@ -1,15 +1,7 @@
-object frmCommonGridEx: TfrmCommonGridEx
-  Left = 0
-  Top = 0
+inherited frmCommonGridEx: TfrmCommonGridEx
   Caption = 'frmCommonGridEx'
   ClientHeight = 340
   ClientWidth = 921
-  Color = clBtnFace
-  Font.Charset = DEFAULT_CHARSET
-  Font.Color = clWindowText
-  Font.Height = -11
-  Font.Name = 'Tahoma'
-  Font.Style = []
   OldCreateOrder = True
   PixelsPerInch = 96
   TextHeight = 13

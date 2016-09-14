@@ -13,7 +13,7 @@ library FutureSingleTrade;
 uses
   System.SysUtils,
   System.Classes,
-  uFutureSingleTradeDataCenter in 'uFutureSingleTradeDataCenter.pas' {frmFutureSingleTradeDataCenter},
+  uFutureSingleTradeDataCenterForm in 'uFutureSingleTradeDataCenterForm.pas' {frmFutureSingleTradeDataCenter},
   uFutureSingleTradeDealForm in 'uFutureSingleTradeDealForm.pas' {frmFutureSingleTradeDeal},
   uFutureSingleTradeEntrustForm in 'uFutureSingleTradeEntrustForm.pas' {frmFutureSingleTradeEntrust},
   uFutureSingleTradeFundForm in 'uFutureSingleTradeFundForm.pas' {frmFutureSingleTradeFund},

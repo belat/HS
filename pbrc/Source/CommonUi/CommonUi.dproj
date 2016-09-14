@@ -78,6 +78,10 @@
         <DCC_RemoteDebug>true</DCC_RemoteDebug>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+        <DCC_ExeOutput>..\..\Run\Bin</DCC_ExeOutput>
+        <Manifest_File>None</Manifest_File>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
@@ -90,7 +94,7 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="uCommonDataCenter.pas">
+        <DCCReference Include="uCommonDataCenterForm.pas">
             <Form>frmCommonDataCenter</Form>
             <FormType>dfm</FormType>
         </DCCReference>
@@ -146,6 +150,22 @@
             <Form>frmCommonOrderInputGrid</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="uCommonCustomForm.pas">
+            <Form>frmCommonCustom</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="uCommonForm.pas">
+            <Form>frmCommon</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="uCommonDialogForm.pas">
+            <Form>frmCommonDialog</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="uCommonDialogMsgForm.pas">
+            <Form>frmCommonDialogMsg</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -166,8 +186,21 @@
                 <Source>
                     <Source Name="MainSource">CommonUi.dpr</Source>
                 </Source>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcboffice2k210.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcbofficexp210.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k210.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp210.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="d:\devexpress\dev14.2.2\library\rs21\win32\bpl\dclcxgridwizardrs21.bpl">File d:\devexpress\dev14.2.2\library\rs21\win32\bpl\dclcxgridwizardrs21.bpl not found</Excluded_Packages>
+                </Excluded_Packages>
             </Delphi.Personality>
             <Deployment>
+                <DeployFile LocalName="..\..\Run\Bin\CommonUi.dll" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>CommonUi.dll</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib" Class="DependencyModule">
                     <Platform Name="OSX32">
                         <Overwrite>true</Overwrite>

@@ -1,16 +1,7 @@
-object frmCommonOrder: TfrmCommonOrder
-  Left = 0
-  Top = 0
+inherited frmCommonOrder: TfrmCommonOrder
   Caption = 'frmCommonOrder'
   ClientHeight = 237
   ClientWidth = 516
-  Color = clBtnFace
-  Font.Charset = DEFAULT_CHARSET
-  Font.Color = clWindowText
-  Font.Height = -11
-  Font.Name = 'Tahoma'
-  Font.Style = []
-  OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
   object lcMain: TdxLayoutControl

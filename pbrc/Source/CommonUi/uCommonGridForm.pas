@@ -21,10 +21,11 @@ uses
   dxSkinscxPCPainter, cxCustomData, cxFilter, cxData, cxDataStorage, cxEdit,
   cxNavigator, Data.DB, cxDBData, cxGridLevel, cxClasses, cxGridCustomView,
   cxGridCustomTableView, cxGridTableView, cxGridDBTableView, cxGrid,
-  cxButtonEdit, cxCheckBox, Data.Win.ADODB;
+  cxButtonEdit, cxCheckBox, Data.Win.ADODB,
+  uCommonForm;
 
 type
-  TfrmCommonGrid = class(TForm)
+  TfrmCommonGrid = class(TfrmCommon)
     gvMain: TcxGridDBTableView;
     glMain: TcxGridLevel;
     grdMain: TcxGrid;

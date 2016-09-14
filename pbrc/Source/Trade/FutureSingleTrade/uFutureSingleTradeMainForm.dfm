@@ -60,7 +60,6 @@ object frmFutureSingleTradeMain: TfrmFutureSingleTradeMain
               Top = 0
               Width = 1360
               Height = 272
-              ExplicitHeight = 209
               DockingType = 0
               OriginalWidth = 300
               OriginalHeight = 200
@@ -74,7 +73,6 @@ object frmFutureSingleTradeMain: TfrmFutureSingleTradeMain
               AllowFloating = True
               AutoHide = False
               CustomCaptionButtons.Buttons = <>
-              ExplicitHeight = 209
               DockingType = 0
               OriginalWidth = 185
               OriginalHeight = 140
@@ -90,7 +88,6 @@ object frmFutureSingleTradeMain: TfrmFutureSingleTradeMain
                 ShowCaption = False
                 TabsProperties.CustomButtons.Buttons = <>
                 TabsProperties.TabPosition = tpTop
-                ExplicitHeight = 209
                 DockingType = 1
                 OriginalWidth = 520
                 OriginalHeight = 140
@@ -104,8 +101,6 @@ object frmFutureSingleTradeMain: TfrmFutureSingleTradeMain
                   Caption = 'Undeal'
                   CustomCaptionButtons.Buttons = <>
                   TabsProperties.CustomButtons.Buttons = <>
-                  ExplicitWidth = 550
-                  ExplicitHeight = 181
                   DockingType = 0
                   OriginalWidth = 520
                   OriginalHeight = 140
@@ -120,7 +115,6 @@ object frmFutureSingleTradeMain: TfrmFutureSingleTradeMain
                   Caption = 'Entrust'
                   CustomCaptionButtons.Buttons = <>
                   TabsProperties.CustomButtons.Buttons = <>
-                  ExplicitHeight = 181
                   DockingType = 0
                   OriginalWidth = 520
                   OriginalHeight = 140
@@ -136,8 +130,6 @@ object frmFutureSingleTradeMain: TfrmFutureSingleTradeMain
                 Caption = 'Deal'
                 CustomCaptionButtons.Buttons = <>
                 TabsProperties.CustomButtons.Buttons = <>
-                ExplicitLeft = 550
-                ExplicitHeight = 209
                 DockingType = 1
                 OriginalWidth = 840
                 OriginalHeight = 140
@@ -166,7 +158,6 @@ object frmFutureSingleTradeMain: TfrmFutureSingleTradeMain
               Caption = 'Order'
               CustomCaptionButtons.Buttons = <>
               TabsProperties.CustomButtons.Buttons = <>
-              ExplicitHeight = 300
               DockingType = 1
               OriginalWidth = 520
               OriginalHeight = 237
@@ -181,7 +172,6 @@ object frmFutureSingleTradeMain: TfrmFutureSingleTradeMain
               Caption = 'Position'
               CustomCaptionButtons.Buttons = <>
               TabsProperties.CustomButtons.Buttons = <>
-              ExplicitHeight = 300
               DockingType = 1
               OriginalWidth = 840
               OriginalHeight = 237

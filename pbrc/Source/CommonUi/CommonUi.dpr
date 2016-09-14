@@ -13,7 +13,7 @@ library CommonUi;
 uses
   System.SysUtils,
   System.Classes,
-  uCommonDataCenter in 'uCommonDataCenter.pas' {frmCommonDataCenter},
+  uCommonDataCenterForm in 'uCommonDataCenterForm.pas' {frmCommonDataCenter},
   uCommonFundForm in 'uCommonFundForm.pas' {frmCommonFund},
   uCommonGridExForm in 'uCommonGridExForm.pas' {frmCommonGridEx},
   uCommonGridForm in 'uCommonGridForm.pas' {frmCommonGrid},
@@ -26,7 +26,11 @@ uses
   uCommonOrderForm in 'uCommonOrderForm.pas' {frmCommonOrder},
   uCommonOrderHqFutureForm in 'uCommonOrderHqFutureForm.pas' {frmCommonOrderHqFuture},
   uCommonOrderInputForm in 'uCommonOrderInputForm.pas' {frmCommonInput},
-  uCommonOrderInputGridForm in 'uCommonOrderInputGridForm.pas' {frmCommonOrderInputGrid};
+  uCommonOrderInputGridForm in 'uCommonOrderInputGridForm.pas' {frmCommonOrderInputGrid},
+  uCommonCustomForm in 'uCommonCustomForm.pas' {frmCommonCustom},
+  uCommonForm in 'uCommonForm.pas' {frmCommon},
+  uCommonDialogForm in 'uCommonDialogForm.pas' {frmCommonDialog},
+  uCommonDialogMsgForm in 'uCommonDialogMsgForm.pas' {frmCommonDialogMsg};
 
 {$R *.res}
 

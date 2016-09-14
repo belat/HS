@@ -19,10 +19,11 @@ uses
   dxSkinSummer2008, dxSkinTheAsphaltWorld, dxSkinsDefaultPainters,
   dxSkinValentine, dxSkinVS2010, dxSkinWhiteprint, dxSkinXmas2008Blue,
   cxInplaceContainer, cxVGrid, cxClasses, cxEditRepositoryItems, cxDBVGrid,
-  Data.DB, dxmdaset;
+  Data.DB, dxmdaset,
+  uCommonForm;
 
 type
-  TfrmCommonGridVertical = class(TForm)
+  TfrmCommonGridVertical = class(TfrmCommon)
     grdMain: TcxDBVerticalGrid;
     mdMain: TdxMemData;
     erMain: TcxEditRepository;

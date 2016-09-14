@@ -48,9 +48,6 @@ begin
   if not Assigned(frmFutureSingleTradeOrderHq) then
   begin
     frmFutureSingleTradeOrderHq := TfrmFutureSingleTradeOrderHq.Create(pnlHq);
-    frmFutureSingleTradeOrderHq.Parent := pnlHq;
-    frmFutureSingleTradeOrderHq.Align := alclient;
-    frmFutureSingleTradeOrderHq.BorderStyle := bsnone;
   end;
   frmFutureSingleTradeOrderHq.Show;
 
@@ -66,9 +63,6 @@ begin
   if not Assigned(frmFutureSingleTradeOrderInputGrid) then
   begin
     frmFutureSingleTradeOrderInputGrid := TfrmFutureSingleTradeOrderInputGrid.Create(pnlInput);
-    frmFutureSingleTradeOrderInputGrid.Parent := pnlInput;
-    frmFutureSingleTradeOrderInputGrid.Align := alclient;
-    frmFutureSingleTradeOrderInputGrid.BorderStyle := bsnone;
   end;
   frmFutureSingleTradeOrderInputGrid.Show;
 end;

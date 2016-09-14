@@ -1,2 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<BorlandProject/>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.348,E:\ProjectOwn\HS\pbrc\Source\Trade\FutureSingleTrade\uFutureSingleTradeDataCenter.dfm=E:\ProjectOwn\HS\pbrc\Source\Trade\FutureSingleTrade\uFutureSingleTradeDataCenterForm.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.348,E:\ProjectOwn\HS\pbrc\Source\Trade\FutureSingleTrade\uFutureSingleTradeDataCenter.pas=E:\ProjectOwn\HS\pbrc\Source\Trade\FutureSingleTrade\uFutureSingleTradeDataCenterForm.pas</Transaction>
+  </Transactions>
+</BorlandProject>

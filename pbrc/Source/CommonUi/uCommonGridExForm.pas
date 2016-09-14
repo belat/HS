@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uCommonGridForm, cxGraphics, cxControls,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, cxGraphics, cxControls,
   cxLookAndFeels, cxLookAndFeelPainters, dxSkinsCore, dxSkinBlack, dxSkinBlue,
   dxSkinBlueprint, dxSkinCaramel, dxSkinCoffee, dxSkinDarkRoom, dxSkinDarkSide,
   dxSkinDevExpressDarkStyle, dxSkinDevExpressStyle, dxSkinFoggy,
@@ -22,10 +22,11 @@ uses
   cxNavigator, Data.DB, cxDBData, cxGridLevel, cxClasses, cxGridCustomView,
   cxGridCustomTableView, cxGridTableView, cxGridDBTableView, cxGrid,
   cxContainer, dxLayoutcxEditAdapters, dxLayoutContainer, cxTextEdit,
-  dxLayoutControl, dxLayoutLookAndFeels;
+  dxLayoutControl, dxLayoutLookAndFeels,
+  uCommonForm;
 
 type
-  TfrmCommonGridEx = class(TForm)
+  TfrmCommonGridEx = class(TfrmCommon)
     lgMain: TdxLayoutGroup;
     lcMain: TdxLayoutControl;
     lgGrid: TdxLayoutGroup;

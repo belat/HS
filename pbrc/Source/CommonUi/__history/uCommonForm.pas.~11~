@@ -4,10 +4,11 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, dxDockPanel,
+  uCommonCustomForm;
 
 type
-  TfrmCommonForm = class(TForm)
+  TfrmCommonForm = class(TfrmCommonCustom)
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
@@ -24,7 +25,11 @@ implementation
 
 procedure TfrmCommonForm.FormCreate(Sender: TObject);
 begin
-  Self.Parent := Sender as TWinControl;
+  inherited;
+  if Sender is TdxDockPanel then
+    Self.Parent := Sender as TdxDockPanel;
+  if Sender is TPanel then
+    Self.Parent := Sender as TPanel;
   Self.BorderStyle := bsNone;
   Self.Align := alClient;
 end;
