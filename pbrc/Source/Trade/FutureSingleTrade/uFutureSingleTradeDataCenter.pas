@@ -14,8 +14,6 @@ type
     mdAssetInfoO: TdxMemData;
     mdProductInfoOProductId: TStringField;
     mdProductInfoOProductName: TStringField;
-    mdAssetInfoOProductId: TStringField;
-    mdAssetInfoOProductName: TStringField;
     mdStockInfoO: TdxMemData;
     mdInvestInfoO: TdxMemData;
     mdPriceInfoO: TdxMemData;
@@ -27,6 +25,10 @@ type
     mdInvestInfoOInvestTypeName: TStringField;
     mdPriceInfoOPriceType: TStringField;
     mdPriceInfoOPriceTypeName: TStringField;
+    mdOrderInfo: TdxMemData;
+    mdAssetInfoOAssetId: TStringField;
+    mdAssetInfoOAssetName: TStringField;
+    mdAssetInfoOProductId: TStringField;
   private
     { Private declarations }
   public

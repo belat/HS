@@ -81,18 +81,24 @@ inherited frmFutureSingleTradeDataCenter: TfrmFutureSingleTradeDataCenter
     Active = True
     Indexes = <>
     Persistent.Data = {
-      5665728FC2F5285C8FFE3F020000001400000001000A0050726F647563744964
-      001400000001000C0050726F647563744E616D65000103000000313030010500
-      0000B2FAC6B73101030000003130310105000000B2FAC6B73201030000003130
-      330105000000B2FAC6B73301030000003130340105000000B2FAC6B734}
+      5665728FC2F5285C8FFE3F030000001400000001000800417373657449640014
+      00000001000A0041737365744E616D65001400000001000A0050726F64756374
+      4964000104000000313030310105000000B5A5D4AA3101030000003130300104
+      000000313030320105000000B5A5D4AA32010300000031303001040000003130
+      30330105000000B5A5D4AA330103000000313030010400000031303034010500
+      0000B5A5D4AA3401030000003130310104000000313030350105000000B5A5D4
+      AA350103000000313032}
     SortOptions = []
     Left = 96
     Top = 104
+    object mdAssetInfoOAssetId: TStringField
+      FieldName = 'AssetId'
+    end
+    object mdAssetInfoOAssetName: TStringField
+      FieldName = 'AssetName'
+    end
     object mdAssetInfoOProductId: TStringField
       FieldName = 'ProductId'
-    end
-    object mdAssetInfoOProductName: TStringField
-      FieldName = 'ProductName'
     end
   end
   object mdStockInfoO: TdxMemData
@@ -159,5 +165,12 @@ inherited frmFutureSingleTradeDataCenter: TfrmFutureSingleTradeDataCenter
     object mdPriceInfoOPriceTypeName: TStringField
       FieldName = 'PriceTypeName'
     end
+  end
+  object mdOrderInfo: TdxMemData
+    Active = True
+    Indexes = <>
+    SortOptions = []
+    Left = 384
+    Top = 104
   end
 end

@@ -7,9 +7,15 @@ inherited frmFutureSingleTradePosition: TfrmFutureSingleTradePosition
   ExplicitHeight = 338
   PixelsPerInch = 96
   TextHeight = 13
-  inherited lcCommonGridEx: TdxLayoutControl
+  inherited lcMain: TdxLayoutControl
     Width = 635
     Height = 299
+    inherited grdMain: TcxGrid
+      Width = 877
+      Height = 201
+      ExplicitWidth = 877
+      ExplicitHeight = 201
+    end
     inherited lgMain: TdxLayoutGroup
       Index = -1
     end

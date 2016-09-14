@@ -13,18 +13,20 @@ library FutureSingleTrade;
 uses
   System.SysUtils,
   System.Classes,
-  uFutureSingleTradeMainForm in 'uFutureSingleTradeMainForm.pas' {frmFutureSingleTradeMain},
-  uFutureSingleTradeFundForm in 'uFutureSingleTradeFundForm.pas' {frmFutureSingleTradeFund},
-  uFutureSingleTradeHqMainForm in 'uFutureSingleTradeHqMainForm.pas' {frmFutureSingleTradeHqMain},
-  uFutureSingleTradeOrderForm in 'uFutureSingleTradeOrderForm.pas' {frmFutureSingleTradeOrder},
-  uFutureSingleTradeEntrustForm in 'uFutureSingleTradeEntrustForm.pas' {frmFutureSingleTradeEntrust},
-  uFutureSingleTradeUndealForm in 'uFutureSingleTradeUndealForm.pas' {frmFutureSingleTradeUndeal},
+  uFutureSingleTradeDataCenter in 'uFutureSingleTradeDataCenter.pas' {frmFutureSingleTradeDataCenter},
   uFutureSingleTradeDealForm in 'uFutureSingleTradeDealForm.pas' {frmFutureSingleTradeDeal},
-  uFutureSingleTradePositionForm in 'uFutureSingleTradePositionForm.pas' {frmFutureSingleTradePosition},
+  uFutureSingleTradeEntrustForm in 'uFutureSingleTradeEntrustForm.pas' {frmFutureSingleTradeEntrust},
+  uFutureSingleTradeFundForm in 'uFutureSingleTradeFundForm.pas' {frmFutureSingleTradeFund},
   uFutureSingleTradeHqDsForm in 'uFutureSingleTradeHqDsForm.pas' {frmFutureSingleHqDs},
+  uFutureSingleTradeHqMainForm in 'uFutureSingleTradeHqMainForm.pas' {frmFutureSingleTradeHqMain},
+  uFutureSingleTradeMainForm in 'uFutureSingleTradeMainForm.pas' {frmFutureSingleTradeMain},
+  uFutureSingleTradeOrderForm in 'uFutureSingleTradeOrderForm.pas' {frmFutureSingleTradeOrder},
+  uFutureSingleTradeOrderHqForm in 'uFutureSingleTradeOrderHqForm.pas' {frmFutureSingleTradeOrderHq},
   uFutureSingleTradeOrderInputForm in 'uFutureSingleTradeOrderInputForm.pas' {frmFutureSingleTradeOrderInput},
+  uFutureSingleTradeOrderInputGridForm in 'uFutureSingleTradeOrderInputGridForm.pas' {frmFutureSingleTradeOrderInputGrid},
+  uFutureSingleTradePositionForm in 'uFutureSingleTradePositionForm.pas' {frmFutureSingleTradePosition},
   uFutureSingleTradeTest in 'uFutureSingleTradeTest.pas' {frmFutureSingleTradeTest},
-  uFutureSingleTradeDataCenter in 'uFutureSingleTradeDataCenter.pas' {frmFutureSingleTradeDataCenter};
+  uFutureSingleTradeUndealForm in 'uFutureSingleTradeUndealForm.pas' {frmFutureSingleTradeUndeal};
 
 {$R *.res}
 

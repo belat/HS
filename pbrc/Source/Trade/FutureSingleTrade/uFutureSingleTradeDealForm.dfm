@@ -6,10 +6,8 @@ inherited frmFutureSingleTradeDeal: TfrmFutureSingleTradeDeal
   ExplicitHeight = 338
   PixelsPerInch = 96
   TextHeight = 13
-  inherited grdCommon: TcxGrid
+  inherited grdMain: TcxGrid
     Width = 635
     Height = 299
-    ExplicitWidth = 635
-    ExplicitHeight = 299
   end
 end

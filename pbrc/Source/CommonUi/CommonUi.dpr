@@ -21,9 +21,12 @@ uses
   uCommonGridHqForm in 'uCommonGridHqForm.pas' {frmCommonGridHq},
   uCommonGridHqFutureForm in 'uCommonGridHqFutureForm.pas' {frmCommonGridHqFuture},
   uCommonGridVerticalForm in 'uCommonGridVerticalForm.pas' {frmCommonGridVertical},
+  uCommonHqForm in 'uCommonHqForm.pas' {frmCommonHq},
+  uCommonHqFutureForm in 'uCommonHqFutureForm.pas' {frmCommonHqFuture},
   uCommonOrderForm in 'uCommonOrderForm.pas' {frmCommonOrder},
+  uCommonOrderHqFutureForm in 'uCommonOrderHqFutureForm.pas' {frmCommonOrderHqFuture},
   uCommonOrderInputForm in 'uCommonOrderInputForm.pas' {frmCommonInput},
-  uCommonHqForm in 'uCommonHqForm.pas';
+  uCommonOrderInputGridForm in 'uCommonOrderInputGridForm.pas' {frmCommonOrderInputGrid};
 
 {$R *.res}
 

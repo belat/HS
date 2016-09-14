@@ -1,8 +1,7 @@
 inherited frmFutureSingleTradeFund: TfrmFutureSingleTradeFund
   Caption = 'frmFutureSingleTradeFund'
+  ExplicitWidth = 320
+  ExplicitHeight = 240
   PixelsPerInch = 96
   TextHeight = 13
-  inherited grdCommon: TcxGrid
-    ExplicitLeft = -8
-  end
 end

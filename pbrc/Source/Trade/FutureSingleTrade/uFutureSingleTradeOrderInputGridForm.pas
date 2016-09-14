@@ -36,38 +36,22 @@ type
     mdMainInvestType: TStringField;
     mdMainPriceType: TStringField;
     mdMainAmountMax: TStringField;
-    mdStockInfo: TdxMemData;
-    mdProductInfo: TdxMemData;
-    mdAssetInfo: TdxMemData;
     dsProductInfo: TDataSource;
     dsAssetInfo: TDataSource;
     dsStockInfo: TDataSource;
-    mdStockInfoStockCode: TStringField;
-    mdStockInfoStockName: TStringField;
     erMainRecId: TcxDBEditorRow;
     erMainMM: TcxDBEditorRow;
     erMainKP: TcxDBEditorRow;
     erStockCode: TcxDBMultiEditorRow;
     erAmount: TcxDBMultiEditorRow;
-    mdProductInfoProductId: TStringField;
-    mdProductInfoProductName: TStringField;
-    mdStockInfoInterCode: TStringField;
-    mdAssetInfoAssetId: TStringField;
-    mdAssetInfoAssetName: TStringField;
     erProductId: TcxDBMultiEditorRow;
     erAssetId: TcxDBMultiEditorRow;
     erPrice: TcxDBMultiEditorRow;
     mdMainInterCode: TStringField;
     mdMainEntrustDirection: TStringField;
     mdMainKP: TStringField;
-    mdInvestInfo: TdxMemData;
     dsInvestInfo: TDataSource;
-    mdPriceInfo: TdxMemData;
     dsPriceInfo: TDataSource;
-    mdInvestInfoInvestType: TStringField;
-    mdPriceInfoPriceType: TStringField;
-    mdPriceInfoPriceTypeName: TStringField;
-    mdInvestInfoInvestTypeName: TStringField;
     comProductId: TcxEditRepositoryLookupComboBoxItem;
     comAssetId: TcxEditRepositoryLookupComboBoxItem;
     comInvestType: TcxEditRepositoryLookupComboBoxItem;
@@ -81,15 +65,13 @@ type
     rgKP: TcxEditRepositoryRadioGroupItem;
     lblProductName: TcxEditRepositoryLabel;
     lblAssetName: TcxEditRepositoryLabel;
-    mdStockInfoMarketNo: TStringField;
     mdMainProductName: TStringField;
     mdMainAssetName: TStringField;
     mdMainStockName: TStringField;
     mdMainMarketNo: TStringField;
-    mdAssetInfoProductId: TStringField;
-    procedure comStockCodePropertiesEditValueChanged(Sender: TObject);
     procedure comProductIdPropertiesEditValueChanged(Sender: TObject);
     procedure comAssetIdPropertiesEditValueChanged(Sender: TObject);
+    procedure comStockCodePropertiesEditValueChanged(Sender: TObject);
     procedure comInvestTypePropertiesEditValueChanged(Sender: TObject);
     procedure comPriceTypePropertiesEditValueChanged(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -106,61 +88,38 @@ var
 implementation
 
 uses
+  uConsts,
   uFutureSingleTradeDataCenter;
 {$R *.dfm}
 
 procedure TfrmFutureSingleTradeOrderInputGrid.clearData;
 begin
-  erStockCode.Properties.Editors[1].Width := 300;
-end;
-
-procedure TfrmFutureSingleTradeOrderInputGrid.comAssetIdPropertiesEditValueChanged(
-  Sender: TObject);
-begin
-  inherited;
-  mdAssetInfo.Locate(comAssetId.Properties.KeyFieldNames,
-    mdMainAssetId.AsString, [loCaseInsensitive]);
-  mdMainAssetName.AsString := mdAssetInfoAssetName.AsString;
-end;
-
-procedure TfrmFutureSingleTradeOrderInputGrid.comInvestTypePropertiesEditValueChanged(
-  Sender: TObject);
-begin
-  inherited;
-  mdInvestInfo.Locate(comInvestType.Properties.KeyFieldNames,
-    mdMainInvestType.AsString, [loCaseInsensitive]);
-end;
-
-procedure TfrmFutureSingleTradeOrderInputGrid.comPriceTypePropertiesEditValueChanged(
-  Sender: TObject);
-begin
-  inherited;
-  mdPriceInfo.Locate(comPriceType.Properties.KeyFieldNames,
-    mdMainPriceType.AsString, [loCaseInsensitive]);
+  erStockCode.Properties.Editors[1].Width := FUTURE_SINGLE_TRADE_ORDER_STOCK_WIDTH_MAX;
 end;
 
 procedure TfrmFutureSingleTradeOrderInputGrid.comProductIdPropertiesEditValueChanged(
   Sender: TObject);
 begin
   inherited;
-  mdProductInfo.Locate(comProductId.Properties.KeyFieldNames,
+  frmFutureSingleTradeDataCenter.mdProductInfoO.Locate(comProductId.Properties.KeyFieldNames,
     mdMainProductId.AsString, [loCaseInsensitive]);
-  mdMainProductName.AsString := mdProductInfoProductName.AsString;
-  mdAssetInfo.ProgrammedFilter := False;
-  mdAssetInfo.UpdateFilters;
-  mdAssetInfo.ProgrammedFilter := True;
-  mdAssetInfo.FilterList.Clear;
-  while not mdAssetInfo.Eof do
+  mdMainProductId.AsString := frmFutureSingleTradeDataCenter.mdProductInfoOProductId.AsString;
+  mdMainProductName.AsString := frmFutureSingleTradeDataCenter.mdProductInfoOProductName.AsString;
+  frmFutureSingleTradeDataCenter.mdAssetInfoO.ProgrammedFilter := False;
+  frmFutureSingleTradeDataCenter.mdAssetInfoO.UpdateFilters;
+  frmFutureSingleTradeDataCenter.mdAssetInfoO.ProgrammedFilter := True;
+  frmFutureSingleTradeDataCenter.mdAssetInfoO.FilterList.Clear;
+  while not frmFutureSingleTradeDataCenter.mdAssetInfoO.Eof do
   begin
-    if mdAssetInfoProductId.AsString = mdMainProductId.AsString then
-      mdAssetInfo.FilterList.Add(mdAssetInfo.RecNo);
-    mdAssetInfo.Next;
+    if frmFutureSingleTradeDataCenter.mdAssetInfoOProductId.AsString = mdMainProductId.AsString then
+      frmFutureSingleTradeDataCenter.mdAssetInfoO.FilterList.Add(frmFutureSingleTradeDataCenter.mdAssetInfoO.RecNo);
+    frmFutureSingleTradeDataCenter.mdAssetInfoO.Next;
   end;
-  mdAssetInfo.UpdateFilters;
-  if not mdAssetInfo.Eof then
+  frmFutureSingleTradeDataCenter.mdAssetInfoO.UpdateFilters;
+  if not frmFutureSingleTradeDataCenter.mdAssetInfoO.Eof then
   begin
-    mdMainAssetId.AsString := mdAssetInfoAssetId.AsString;
-    mdMainAssetName.AsString := mdAssetInfoAssetName.AsString;
+    mdMainAssetId.AsString := frmFutureSingleTradeDataCenter.mdAssetInfoOAssetId.AsString;
+    mdMainAssetName.AsString := frmFutureSingleTradeDataCenter.mdAssetInfoOAssetName.AsString;
   end
   else
   begin
@@ -169,28 +128,54 @@ begin
   end;
 end;
 
+procedure TfrmFutureSingleTradeOrderInputGrid.comAssetIdPropertiesEditValueChanged(
+  Sender: TObject);
+begin
+  inherited;
+  frmFutureSingleTradeDataCenter.mdAssetInfoO.Locate(comAssetId.Properties.KeyFieldNames,
+    mdMainAssetId.AsString, [loCaseInsensitive]);
+  mdMainAssetName.AsString := frmFutureSingleTradeDataCenter.mdAssetInfoOAssetName.AsString;
+end;
+
 procedure TfrmFutureSingleTradeOrderInputGrid.comStockCodePropertiesEditValueChanged(
   Sender: TObject);
 begin
   inherited;
-  mdStockInfo.Locate(comStockCode.Properties.KeyFieldNames,
+  frmFutureSingleTradeDataCenter.mdStockInfoO.Locate(comStockCode.Properties.KeyFieldNames,
     mdMainInterCode.AsString, [loCaseInsensitive]);
-  mdMainMarketNo.AsString := mdStockInfoMarketNo.AsString;
-  mdMainStockCode.AsString := mdStockInfoStockCode.AsString;
-  mdMainStockName.AsString := mdStockInfoStockName.AsString;
+  mdMainMarketNo.AsString := frmFutureSingleTradeDataCenter.mdStockInfoOMarketNo.AsString;
+  mdMainStockCode.AsString := frmFutureSingleTradeDataCenter.mdStockInfoOStockCode.AsString;
+  mdMainStockName.AsString := frmFutureSingleTradeDataCenter.mdStockInfoOStockName.AsString;
   if mdMainMarketNo.AsString <> '7' then
   begin
-    erStockCode.Properties.Editors[1].Width := 300;
+    erStockCode.Properties.Editors[1].Width := FUTURE_SINGLE_TRADE_ORDER_STOCK_WIDTH_MAX;
   end
   else
   begin
-    erStockCode.Properties.Editors[1].Width := 100;
+    erStockCode.Properties.Editors[1].Width := FUTURE_SINGLE_TRADE_ORDER_STOCK_WIDTH_MIN;
   end;
+end;
+
+procedure TfrmFutureSingleTradeOrderInputGrid.comInvestTypePropertiesEditValueChanged(
+  Sender: TObject);
+begin
+  inherited;
+  frmFutureSingleTradeDataCenter.mdInvestInfoO.Locate(comInvestType.Properties.KeyFieldNames,
+    mdMainInvestType.AsString, [loCaseInsensitive]);
+end;
+
+procedure TfrmFutureSingleTradeOrderInputGrid.comPriceTypePropertiesEditValueChanged(
+  Sender: TObject);
+begin
+  inherited;
+  frmFutureSingleTradeDataCenter.mdPriceInfoO.Locate(comPriceType.Properties.KeyFieldNames,
+    mdMainPriceType.AsString, [loCaseInsensitive]);
 end;
 
 procedure TfrmFutureSingleTradeOrderInputGrid.FormCreate(Sender: TObject);
 begin
   inherited;
+  frmFutureSingleTradeDataCenter := TfrmFutureSingleTradeDataCenter.Create(nil);
   clearData;
 end;
 

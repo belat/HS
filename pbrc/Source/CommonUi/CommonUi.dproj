@@ -122,15 +122,30 @@
             <Form>frmCommonGridVertical</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="uCommonHqForm.pas">
+            <Form>frmCommonHq</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="uCommonHqFutureForm.pas">
+            <Form>frmCommonHqFuture</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <DCCReference Include="uCommonOrderForm.pas">
             <Form>frmCommonOrder</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="uCommonOrderHqFutureForm.pas">
+            <Form>frmCommonOrderHqFuture</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="uCommonOrderInputForm.pas">
             <Form>frmCommonInput</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="uCommonHqForm.pas"/>
+        <DCCReference Include="uCommonOrderInputGridForm.pas">
+            <Form>frmCommonOrderInputGrid</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

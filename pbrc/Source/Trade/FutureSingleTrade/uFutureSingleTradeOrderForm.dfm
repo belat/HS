@@ -1,5 +1,6 @@
 inherited frmFutureSingleTradeOrder: TfrmFutureSingleTradeOrder
   Caption = 'frmFutureSingleTradeOrder'
+  OnShow = FormShow
   ExplicitWidth = 532
   ExplicitHeight = 276
   PixelsPerInch = 96

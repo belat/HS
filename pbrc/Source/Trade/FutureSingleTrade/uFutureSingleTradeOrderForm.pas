@@ -19,8 +19,9 @@ uses
   dxSkinSummer2008, dxSkinTheAsphaltWorld, dxSkinsDefaultPainters,
   dxSkinValentine, dxSkinVS2010, dxSkinWhiteprint, dxSkinXmas2008Blue, cxLabel,
   uCommonOrderForm, dxSkinscxPCPainter, dxLayoutControlAdapters,
-  dxLayoutContainer, Vcl.ExtCtrls, dxLayoutControl, dxLayoutLookAndFeels,
-  cxClasses;
+  dxLayoutContainer, Vcl.ExtCtrls, dxLayoutControl,
+  uFutureSingleTradeOrderInputForm,
+  uFutureSingleTradeOrderHqForm, dxLayoutLookAndFeels, cxClasses;
 
 type
   TfrmFutureSingleTradeOrder = class(TfrmCommonOrder)
@@ -37,9 +38,7 @@ var
 implementation
 
 uses
-  uFutureSingleTradeOrderInputForm,
-  uFutureSingleTradeOrderInputGridForm,
-  uFutureSingleTradeOrderHqForm;
+  uFutureSingleTradeOrderInputGridForm;
 
 {$R *.dfm}
 

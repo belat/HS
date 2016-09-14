@@ -1,8 +1,11 @@
 inherited frmCommonHq: TfrmCommonHq
   Caption = 'frmCommonHq'
+  ClientHeight = 237
+  ExplicitHeight = 276
   PixelsPerInch = 96
   TextHeight = 13
   inherited grdMain: TcxDBVerticalGrid
+    Height = 237
     LayoutStyle = lsMultiRecordView
     Version = 1
     object erMainRecId: TcxDBEditorRow

@@ -21,7 +21,8 @@ uses
   uCommonGridExForm, dxSkinscxPCPainter, cxStyles, cxCustomData, cxFilter,
   cxData, cxDataStorage, cxNavigator, Data.DB, cxDBData, dxLayoutContainer,
   cxGridLevel, cxClasses, cxGridCustomView, cxGridCustomTableView,
-  cxGridTableView, cxGridDBTableView, cxGrid, dxLayoutControl;
+  cxGridTableView, cxGridDBTableView, cxGrid, dxLayoutControl,
+  dxLayoutLookAndFeels;
 
 type
   TfrmFutureSingleTradePosition = class(TfrmCommonGridEx)
