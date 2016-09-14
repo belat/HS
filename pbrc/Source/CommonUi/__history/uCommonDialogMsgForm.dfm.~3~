@@ -1,0 +1,64 @@
+object frmCommonDialogMsg: TfrmCommonDialogMsg
+  Left = 0
+  Top = 0
+  Caption = 'frmCommonDialogMsg'
+  ClientHeight = 299
+  ClientWidth = 635
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lcMain: TdxLayoutControl
+    Left = 0
+    Top = 0
+    Width = 635
+    Height = 299
+    Align = alClient
+    TabOrder = 0
+    ExplicitLeft = 288
+    ExplicitTop = 184
+    ExplicitWidth = 300
+    ExplicitHeight = 250
+    object lgMain: TdxLayoutGroup
+      AlignHorz = ahParentManaged
+      AlignVert = avParentManaged
+      LayoutLookAndFeel = lafStandard
+      ButtonOptions.Buttons = <>
+      Hidden = True
+      ShowBorder = False
+      Index = -1
+    end
+    object lgMsg: TdxLayoutGroup
+      Parent = lgMain
+      CaptionOptions.Text = 'New Group'
+      ButtonOptions.Buttons = <>
+      Index = 0
+    end
+    object lgOperation: TdxLayoutGroup
+      Parent = lgMain
+      CaptionOptions.Text = 'New Group'
+      ButtonOptions.Buttons = <>
+      Index = 1
+    end
+    object lgButtons: TdxLayoutGroup
+      Parent = lgOperation
+      CaptionOptions.Text = 'New Group'
+      ButtonOptions.Buttons = <>
+      Index = 0
+    end
+  end
+  object lafMain: TdxLayoutLookAndFeelList
+    object lafStandard: TdxLayoutStandardLookAndFeel
+      Offsets.ControlOffsetHorz = 0
+      Offsets.ControlOffsetVert = 0
+      Offsets.ItemOffset = 0
+      Offsets.RootItemsAreaOffsetHorz = 5
+      Offsets.RootItemsAreaOffsetVert = 5
+    end
+  end
+end

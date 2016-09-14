@@ -89,7 +89,7 @@ implementation
 
 uses
   uConsts,
-  uFutureSingleTradeDataCenter;
+  uFutureSingleTradeDataCenterForm;
 {$R *.dfm}
 
 procedure TfrmFutureSingleTradeOrderInputGrid.clearData;

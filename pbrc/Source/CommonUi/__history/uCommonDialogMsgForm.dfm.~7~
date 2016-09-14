@@ -1,0 +1,164 @@
+object frmCommonDialogMsg: TfrmCommonDialogMsg
+  Left = 0
+  Top = 0
+  Caption = 'frmCommonDialogMsg'
+  ClientHeight = 100
+  ClientWidth = 400
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lcMain: TdxLayoutControl
+    Left = 0
+    Top = 0
+    Width = 400
+    Height = 100
+    Align = alClient
+    TabOrder = 0
+    ExplicitLeft = 288
+    ExplicitTop = 184
+    ExplicitWidth = 300
+    ExplicitHeight = 250
+    object btnOk: TcxButton
+      Left = 121
+      Top = 68
+      Width = 75
+      Height = 25
+      Caption = 'btnOk'
+      TabOrder = 3
+    end
+    object btnCancel: TcxButton
+      Left = 203
+      Top = 68
+      Width = 75
+      Height = 25
+      Caption = 'btnCancel'
+      TabOrder = 4
+    end
+    object imgMsg: TcxImage
+      Left = 7
+      Top = 7
+      Style.BorderColor = clWindowFrame
+      Style.BorderStyle = ebs3D
+      Style.HotTrack = False
+      TabOrder = 0
+      Height = 32
+      Width = 32
+    end
+    object chkNotShowAgain: TcxDBCheckBox
+      Left = 7
+      Top = 68
+      Caption = 'chkNotShowAgain'
+      Style.BorderColor = clWindowFrame
+      Style.BorderStyle = ebs3D
+      Style.HotTrack = False
+      TabOrder = 2
+      Width = 121
+    end
+    object meoMsg: TcxDBMemo
+      Left = 46
+      Top = 7
+      Style.BorderColor = clWindowFrame
+      Style.BorderStyle = ebs3D
+      Style.HotTrack = False
+      TabOrder = 1
+      Height = 89
+      Width = 185
+    end
+    object lgMain: TdxLayoutGroup
+      AlignHorz = ahParentManaged
+      AlignVert = avParentManaged
+      LayoutLookAndFeel = lafStandard
+      ButtonOptions.Buttons = <>
+      Hidden = True
+      ShowBorder = False
+      Index = -1
+    end
+    object lgMsg: TdxLayoutGroup
+      Parent = lgMain
+      AlignVert = avClient
+      CaptionOptions.Text = 'New Group'
+      ButtonOptions.Buttons = <>
+      LayoutDirection = ldHorizontal
+      ShowBorder = False
+      Index = 0
+    end
+    object lgOperation: TdxLayoutGroup
+      Parent = lgMain
+      AlignVert = avBottom
+      CaptionOptions.Text = 'New Group'
+      ButtonOptions.Buttons = <>
+      LayoutDirection = ldHorizontal
+      ShowBorder = False
+      Index = 1
+    end
+    object lgButtons: TdxLayoutGroup
+      Parent = lgOperation
+      AlignHorz = ahCenter
+      AlignVert = avBottom
+      CaptionOptions.Text = 'New Group'
+      ButtonOptions.Buttons = <>
+      LayoutDirection = ldHorizontal
+      ShowBorder = False
+      Index = 1
+    end
+    object liOk: TdxLayoutItem
+      Parent = lgButtons
+      CaptionOptions.Text = 'cxButton1'
+      CaptionOptions.Visible = False
+      Control = btnOk
+      ControlOptions.ShowBorder = False
+      Index = 0
+    end
+    object liCancel: TdxLayoutItem
+      Parent = lgButtons
+      CaptionOptions.Text = 'cxButton1'
+      CaptionOptions.Visible = False
+      Control = btnCancel
+      ControlOptions.ShowBorder = False
+      Index = 1
+    end
+    object liImgMsg: TdxLayoutItem
+      Parent = lgMsg
+      CaptionOptions.Text = 'cxImage1'
+      CaptionOptions.Visible = False
+      Control = imgMsg
+      ControlOptions.ShowBorder = False
+      Index = 0
+    end
+    object liNotShowAgain: TdxLayoutItem
+      Parent = lgOperation
+      CaptionOptions.Text = 'cxDBCheckBox1'
+      CaptionOptions.Visible = False
+      Control = chkNotShowAgain
+      ControlOptions.ShowBorder = False
+      Index = 0
+    end
+    object liMeoMsg: TdxLayoutItem
+      Parent = lgMsg
+      AlignHorz = ahClient
+      AlignVert = avClient
+      CaptionOptions.Text = 'cxDBMemo1'
+      CaptionOptions.Visible = False
+      Control = meoMsg
+      ControlOptions.ShowBorder = False
+      Index = 1
+    end
+  end
+  object lafMain: TdxLayoutLookAndFeelList
+    Left = 384
+    Top = 8
+    object lafStandard: TdxLayoutStandardLookAndFeel
+      Offsets.ControlOffsetHorz = 0
+      Offsets.ControlOffsetVert = 0
+      Offsets.ItemOffset = 5
+      Offsets.RootItemsAreaOffsetHorz = 5
+      Offsets.RootItemsAreaOffsetVert = 5
+    end
+  end
+end

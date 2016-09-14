@@ -1,0 +1,27 @@
+unit uCommonCustomForm;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
+
+type
+  TfrmCommonCustom = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    procedure setLookAndFeel();
+    procedure setLanguage();
+    procedure setSkin;
+  end;
+
+var
+  frmCommonCustom: TfrmCommonCustom;
+
+implementation
+
+{$R *.dfm}
+
+end.
