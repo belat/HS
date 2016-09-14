@@ -1,8 +1,0 @@
-inherited frmCommonOrderInputGrid: TfrmCommonOrderInputGrid
-  Caption = 'frmCommonOrderInputGrid'
-  PixelsPerInch = 96
-  TextHeight = 13
-  inherited grdCommonGridVertical: TcxVerticalGrid
-    Version = 1
-  end
-end

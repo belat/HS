@@ -1,4 +1,0 @@
-inherited frmFutureSingleTradeOrderHq: TfrmFutureSingleTradeOrderHq
-  Caption = 'frmFutureSingleTradeOrderHq'
-  ClientHeight = 237
-end

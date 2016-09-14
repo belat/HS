@@ -1,4 +1,0 @@
-inherited frmCommonHq: TfrmCommonHq
-  Caption = 'frmCommonHq'
-  
-end

@@ -1,4 +1,0 @@
-inherited frmFutureSingleTradeOrder: TfrmFutureSingleTradeOrder
-  Caption = 'frmFutureSingleTradeOrder'
-
-end

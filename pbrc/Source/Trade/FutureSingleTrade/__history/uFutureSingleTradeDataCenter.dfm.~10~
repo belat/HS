@@ -1,4 +1,0 @@
-inherited frmFutureSingleTradeDataCenter: TfrmFutureSingleTradeDataCenter
-  Caption = 'frmFutureSingleTradeDataCenter'
-  
-end
