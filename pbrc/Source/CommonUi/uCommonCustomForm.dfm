@@ -14,4 +14,6 @@ object frmCommonCustom: TfrmCommonCustom
   OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
+  object lfcMain: TcxLookAndFeelController
+  end
 end

@@ -6,7 +6,7 @@ inherited frmCommonGrid: TfrmCommonGrid
   ExplicitHeight = 407
   PixelsPerInch = 96
   TextHeight = 13
-  object grdMain: TcxGrid
+  object grdMain: TcxGrid [0]
     Left = 0
     Top = 0
     Width = 705

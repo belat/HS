@@ -48,6 +48,7 @@ type
     btnStockSingleTrade: TdxBarButton;
     btnStockMultiTrade: TdxBarButton;
     rtQueryManage: TdxRibbonTab;
+    lfcMain: TcxLookAndFeelController;
     procedure btnFutureSingleTradeClick(Sender: TObject);
     procedure btnFutureMultiTradeClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);

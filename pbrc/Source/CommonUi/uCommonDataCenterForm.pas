@@ -27,6 +27,19 @@ type
     mdPriceInfoPriceType: TStringField;
     mdPriceInfoPriceTypeName: TStringField;
     mdConfig: TdxMemData;
+    mdPosition: TdxMemData;
+    mdEntrust: TdxMemData;
+    mdDeal: TdxMemData;
+    mdPositionInterCode: TStringField;
+    mdPositionStockCode: TStringField;
+    mdPositionStockName: TStringField;
+    mdPositionMarketNo: TStringField;
+    mdPositionMarketName: TStringField;
+    mdPositionAmount: TStringField;
+    mdPositionAmountAvailable: TStringField;
+    mdEntrustEntrustNo: TStringField;
+    mdEntrustEntrustBatchNo: TStringField;
+    mdEntrustEntrustStatus: TStringField;
   private
     { Private declarations }
   public

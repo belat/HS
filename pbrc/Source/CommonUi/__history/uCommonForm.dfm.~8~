@@ -1,0 +1,11 @@
+inherited frmCommon: TfrmCommon
+  Caption = 'frmCommon'
+  ExplicitWidth = 651
+  ExplicitHeight = 338
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lfcMain: TcxLookAndFeelController
+    NativeStyle = False
+    SkinName = 'MetropolisDark'
+  end
+end

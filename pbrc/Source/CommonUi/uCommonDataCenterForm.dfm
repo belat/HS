@@ -126,4 +126,52 @@ object frmCommonDataCenter: TfrmCommonDataCenter
     Left = 24
     Top = 56
   end
+  object mdPosition: TdxMemData
+    Indexes = <>
+    SortOptions = []
+    Left = 384
+    Top = 8
+    object mdPositionInterCode: TStringField
+      FieldName = 'InterCode'
+    end
+    object mdPositionMarketNo: TStringField
+      FieldName = 'MarketNo'
+    end
+    object mdPositionMarketName: TStringField
+      FieldName = 'MarketName'
+    end
+    object mdPositionStockCode: TStringField
+      FieldName = 'StockCode'
+    end
+    object mdPositionStockName: TStringField
+      FieldName = 'StockName'
+    end
+    object mdPositionAmount: TStringField
+      FieldName = 'Amount'
+    end
+    object mdPositionAmountAvailable: TStringField
+      FieldName = 'AmountAvailable'
+    end
+  end
+  object mdEntrust: TdxMemData
+    Indexes = <>
+    SortOptions = []
+    Left = 456
+    Top = 8
+    object mdEntrustEntrustNo: TStringField
+      FieldName = 'EntrustNo'
+    end
+    object mdEntrustEntrustBatchNo: TStringField
+      FieldName = 'EntrustBatchNo'
+    end
+    object mdEntrustEntrustStatus: TStringField
+      FieldName = 'EntrustStatus'
+    end
+  end
+  object mdDeal: TdxMemData
+    Indexes = <>
+    SortOptions = []
+    Left = 536
+    Top = 8
+  end
 end
